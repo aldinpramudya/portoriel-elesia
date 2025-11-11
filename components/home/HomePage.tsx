@@ -1,8 +1,9 @@
 import CardProfile from "./CardProfile";
 import Introduction from "./Introduction";
 import Experience from "./Experience";
-import Education from "./Education";
 import TechStack from "./TechStack";
+import Portfolio from "./Portfolio";
+import ContactMe from "./ContactMe";
 
 export default function HomePage() {
     return (
@@ -19,7 +20,10 @@ export default function HomePage() {
                     <Experience />
                 </div>
                 <div className="pt-3">
-                    <Education />
+                    <Portfolio />
+                </div>
+                <div className="pt-3">
+                    <ContactMe />
                 </div>
             </div>
         </>

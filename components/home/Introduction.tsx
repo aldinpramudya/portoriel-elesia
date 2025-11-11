@@ -3,8 +3,7 @@ import { Separator } from "@/components/ui/separator"
 import { Button } from "@/components/ui/button"
 
 // Icons
-import { FaGithub } from "react-icons/fa";
-import { RxOpenInNewWindow } from "react-icons/rx";
+import { FaGithub, FaLinkedin, FaInstagram } from "react-icons/fa";
 
 export default function Introduction() {
     return (
@@ -21,8 +20,6 @@ export default function Introduction() {
                     <p className="font-bold">Full Stack Web Developer</p>
                     <Separator orientation="vertical" />
                     <p className="font-bold">Front End Developer</p>
-                    <Separator orientation="vertical" />
-                    <p className="font-bold">Full Learning Developer</p>
                 </div>
                 {/* Description */}
                 <p className="pt-3 text-justify">
@@ -31,8 +28,9 @@ export default function Introduction() {
                     In the same time, while technology evolves, I&apos;m constantly expanding my skill set where every project is an opportunity to push boundaries and refine my craft.
                 </p>
                 <div className="pt-3 flex flex-row gap-3">
-                    <Button><FaGithub/>Github</Button>
-                    <Button><RxOpenInNewWindow/>RIEL.studio</Button>
+                    <Button variant="outline" className="rounded-full hover:bg-gray-900 hover:text-white transition-colors"><FaGithub/></Button>
+                    <Button variant="outline" className="rounded-full hover:bg-gray-900 hover:text-white transition-colors"><FaLinkedin/></Button>
+                    <Button variant="outline" className="rounded-full hover:bg-gray-900 hover:text-white transition-colors"><FaInstagram/></Button>
                 </div>
             </div>
         </>

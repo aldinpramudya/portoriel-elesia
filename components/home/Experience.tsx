@@ -9,7 +9,7 @@ export default function Experience(){
         <>
             <div>
                 <p className="font-bold text-5xl capitalize text-[#FF4F04]">
-                    experience
+                    experiences & works related
                 </p>
                 <Separator className="my-4" />
                 {/* Contents */}
