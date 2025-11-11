@@ -26,8 +26,10 @@ export default function Navbar() {
         <>
             <nav className="flex flex-row gap-3 sticky w-full md:px-50 px-5 py-5">
                 <Avatar>
-                    <AvatarImage src="https://github.com/shadcn.png" alt="@shadcn" />
-                    <AvatarFallback>CN</AvatarFallback>
+                    <Link href="https://github.com/aldinpramudya" target="_blank">
+                        <AvatarImage src="https://avatars.githubusercontent.com/u/88958719?s=400&u=ef1e2e48e408e861e8fe80b1a05150defa0320f6&v=4" alt="github" />
+                        <AvatarFallback>RI</AvatarFallback>
+                    </Link>
                 </Avatar>
                 <NavigationMenu>
                     <NavigationMenuList>
@@ -42,6 +44,13 @@ export default function Navbar() {
                         <NavigationMenuItem>
                             <NavigationMenuLink asChild className={navigationMenuTriggerStyle()}>
                                 <Link href="/works">Works</Link>
+                            </NavigationMenuLink>
+                        </NavigationMenuItem>
+                        {/* Works End */}
+                        {/* Works */}
+                        <NavigationMenuItem>
+                            <NavigationMenuLink asChild className={navigationMenuTriggerStyle()}>
+                                <Link href="/contacts">Contacts</Link>
                             </NavigationMenuLink>
                         </NavigationMenuItem>
                         {/* Works End */}

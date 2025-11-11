@@ -34,6 +34,7 @@ export default function RootLayout({
         <main className="md:py-10 md:px-50">
           {children}
         </main>
+        <Footer />
       </body>
     </html>
   );
