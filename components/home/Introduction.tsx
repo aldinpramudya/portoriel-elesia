@@ -2,6 +2,10 @@
 import { Separator } from "@/components/ui/separator"
 import { Button } from "@/components/ui/button"
 
+// Icons
+import { FaGithub } from "react-icons/fa";
+import { RxOpenInNewWindow } from "react-icons/rx";
+
 export default function Introduction() {
     return (
         <>
@@ -26,8 +30,9 @@ export default function Introduction() {
                     Whether it&apos;s a sleek landing page or dynamic web application I ensure every project is built to impress and perform.
                     In the same time, while technology evolves, I&apos;m constantly expanding my skill set where every project is an opportunity to push boundaries and refine my craft.
                 </p>
-                <div className="pt-3">
-                    <Button>Github</Button>
+                <div className="pt-3 flex flex-row gap-3">
+                    <Button><FaGithub/>Github</Button>
+                    <Button><RxOpenInNewWindow/>RIEL.studio</Button>
                 </div>
             </div>
         </>
