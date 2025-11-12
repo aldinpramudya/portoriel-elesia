@@ -3,7 +3,7 @@ import { Separator } from "@/components/ui/separator"
 import { Button } from "@/components/ui/button"
 
 // Icons
-import { FaGithub, FaLinkedin, FaInstagram } from "react-icons/fa";
+import { MdConnectWithoutContact } from "react-icons/md";
 
 export default function Introduction() {
     return (
@@ -28,9 +28,7 @@ export default function Introduction() {
                     In the same time, while technology evolves, I&apos;m constantly expanding my skill set where every project is an opportunity to push boundaries and refine my craft.
                 </p>
                 <div className="pt-3 flex flex-row gap-3">
-                    <Button variant="outline" className="rounded-full hover:bg-gray-900 hover:text-white transition-colors"><FaGithub/></Button>
-                    <Button variant="outline" className="rounded-full hover:bg-gray-900 hover:text-white transition-colors"><FaLinkedin/></Button>
-                    <Button variant="outline" className="rounded-full hover:bg-gray-900 hover:text-white transition-colors"><FaInstagram/></Button>
+                    <Button variant="outline" className="rounded-xl hover:bg-gray-900 hover:text-white transition-colors"><MdConnectWithoutContact />Contact Me</Button>
                 </div>
             </div>
         </>

@@ -1,7 +1,9 @@
+import WorkPage from "@/components/works/WorkPage"
+
 export default function Works(){
     return(
         <>
-            ini adalah halaman works
+            <WorkPage/>
         </>
     )
 }
