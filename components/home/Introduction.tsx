@@ -11,7 +11,7 @@ export default function Introduction() {
             <div className="w-1/2">
                 <div>
                     <h1 className="font-bold text-5xl">
-                        hi, I&apos;m Aldin A<span className="text-[#FF4F04]">riel</span> Pramudya
+                        hi, I&apos;m Aldin A<span className="text-(--main-color)">riel</span> Pramudya
                     </h1>
                 </div>
                 {/* Tags */}

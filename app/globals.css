@@ -3,6 +3,7 @@
 
 body {
   background: #f3f3f1;
+  --main-color: #FF4F04;
 }
 
 @custom-variant dark (&:is(.dark *));
