@@ -5,6 +5,9 @@ import { Separator } from "@/components/ui/separator"
 
 import SocialCard from "@/components/SocialCard"
 
+// Constants
+import { contactData } from "@/constants"
+
 export default function ContactList() {
     return (
         <>
@@ -13,14 +16,19 @@ export default function ContactList() {
                     contact me here
                 </p>
                 <Separator className="my-4" />
-                <SocialCard
-                    logoProfilePicture="https://logo.clearbit.com/github.com"
-                    socialName="GitHub"
-                    username="yourhandle"
-                    description="Building amazing projects and contributing to open source. Check out my repositories!"
-                    linkSocial="https://github.com/yourhandle"
-                    bannerColor="bg-gradient-to-r from-gray-700 to-gray-900"
-                />
+                <div className="flex flex-row justify-center space-x-3">
+                    {contactData.map((data) => (
+                        <SocialCard
+                            key={data.id}
+                            logoProfilePicture={data.logoProfilePicture}
+                            socialName={data.socialName}
+                            username={data.username}
+                            description={data.description}
+                            linkSocial={data.linkSocial}
+                            bannerColor={data.bannerColor}
+                        />
+                    ))}
+                </div>
             </div>
         </>
     )

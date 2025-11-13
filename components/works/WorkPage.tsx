@@ -3,6 +3,9 @@ import { Separator } from "@/components/ui/separator";
 import Projects from "./Projects";
 import PortfolioCard from "@/components/PortfolioCard";
 
+// Components 
+import { projectsData } from "@/constants";
+
 export default function WorkPage() {
     return (
         <>
@@ -15,9 +18,9 @@ export default function WorkPage() {
                 <Projects />
             </div>
             <div className="flex flex-row">
-                <PortfolioCard />
-                <PortfolioCard />
-                <PortfolioCard />
+                {projectsData.map((data) => (
+                    <PortfolioCard key={data.id} picture={data.picture} title={data.title} description={data.description} liveDemoLinks={data.liveDemoLinks} githubLinks={data.githubLinks} tags={data.tags} />
+                ))}
             </div>
 
         </>
