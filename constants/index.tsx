@@ -51,7 +51,7 @@ export const contactData = [
     },
     {
         id : 2,
-        logoProfilePicture : "https://instagram.fsub9-1.fna.fbcdn.net/v/t51.2885-19/573308083_18364100506088231_271810268544712406_n.jpg?stp=dst-jpg_s150x150_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLmRqYW5nby4xMDgwLmMyIn0&_nc_ht=instagram.fsub9-1.fna.fbcdn.net&_nc_cat=111&_nc_oc=Q6cZ2QFnFEQXf_e8kLEm70Mclt_P3SklnMxrzmQDz2KrPBzI-XfBgzJx63LEb2fIC2FsOpE&_nc_ohc=xn1j_R9FuMIQ7kNvwG1lFGx&_nc_gid=R4VFzvh7y5u49N4tbI6h3A&edm=AP4sbd4BAAAA&ccb=7-5&oh=00_Afhjms8BTmmcuUSZ1L9dS-kK0sJTwZP8Ju6qVkPufTfF6Q&oe=691B27E9&_nc_sid=7a9f4b",
+        logoProfilePicture : "/instagram-logo.jpg",
         socialName : "Instagram",
         username : "aldin.pramudya",
         description : "See how my personal life goes on or dies on (depends)",
@@ -60,7 +60,7 @@ export const contactData = [
     },
     {
         id : 3, 
-        logoProfilePicture : "https://media.licdn.com/dms/image/v2/D5603AQGBBCnSs_nFog/profile-displayphoto-crop_800_800/B56ZjB1cUlG0AI-/0/1755598673847?e=1764806400&v=beta&t=JojV3woPA5JTVGHC_kAtsmV-kdvWrcF3APzQMnPrWIs",
+        logoProfilePicture : "/linkedin-logo.png",
         socialName : "LinkedIn",
         username : "aldinarielpramudya",
         description : "Checkout my accomplishment and things i interested in",
