@@ -1,16 +1,3 @@
-import { Tags } from "lucide-react";
-
-export const techStackData = [
-    {
-        id: 1,
-        text: `NPM + Typescript for rich and fast dev experience`
-    },
-    {
-        id: 2,
-        text: `Laravel for occasional full stack dev`
-    }
-]
-
 export const experienceData = [
     {
         id: 1,

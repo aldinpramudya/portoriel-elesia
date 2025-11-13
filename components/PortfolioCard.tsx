@@ -53,7 +53,7 @@ export default function PortfolioCard({
 
                     {/* Content Section */}
                     <div className="p-6">
-                        <CardTitle className="text-xl mb-2 group-hover:text-blue-600 transition-colors duration-300">
+                        <CardTitle className="text-xl mb-2 group-hover:text-(--main-color) transition-colors duration-300">
                             {title}
                         </CardTitle>
                         <CardDescription className="text-sm mb-4 line-clamp-2">
@@ -63,7 +63,7 @@ export default function PortfolioCard({
                         {/* Tech Stack Tags */}
                         <div className="flex flex-wrap gap-2 mb-4">
                             {tags.map((tag, index) => (
-                                <span key={index} className="text-xs bg-blue-100 text-blue-700 px-2 py-1 rounded-full">{tag}</span>
+                                <span key={index} className="text-xs bg-(--main-color) text-white px-2 py-1 rounded-full">{tag}</span>
                             ))}
                         </div>
 

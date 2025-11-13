@@ -1,9 +1,12 @@
+import Link from "next/link";
+
 // Shadcn Components
 import { Separator } from "@/components/ui/separator"
 import { Button } from "@/components/ui/button"
 
 // Icons
 import { MdConnectWithoutContact } from "react-icons/md";
+
 
 export default function Introduction() {
     return (
@@ -28,7 +31,9 @@ export default function Introduction() {
                     In the same time, while technology evolves, I&apos;m constantly expanding my skill set where every project is an opportunity to push boundaries and refine my craft.
                 </p>
                 <div className="pt-3 flex flex-row gap-3">
-                    <Button variant="outline" className="rounded-xl hover:bg-gray-900 hover:text-white transition-colors"><MdConnectWithoutContact />Contact Me</Button>
+                    <Link href="/contacts">
+                        <Button variant="outline" className="rounded-xl hover:bg-gray-900 hover:text-white transition-colors"><MdConnectWithoutContact />Contact Me</Button>
+                    </Link>
                 </div>
             </div>
         </>
