@@ -4,7 +4,7 @@ export default function Projects() {
     return (
         <>
             <div>
-                <p className="font-bold text-5xl capitalize text-[#FF4F04]">
+                <p className="font-bold md:text-5xl text-3xl capitalize text-[#FF4F04] pt-3">
                     Projects
                 </p>
                 <Separator className="my-4" />

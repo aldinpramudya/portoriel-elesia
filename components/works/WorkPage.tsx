@@ -9,7 +9,7 @@ import { projectsData } from "@/constants";
 export default function WorkPage() {
     return (
         <>
-            <p className="font-bold text-5xl capitalize text-[#FF4F04]">
+            <p className="font-bold md:text-5xl text-3xl capitalize text-[#FF4F04] pt-5">
                 RIEL.studio
             </p>
             <Separator className="my-4" />
@@ -17,7 +17,7 @@ export default function WorkPage() {
             <div className="pt-4">
                 <Projects />
             </div>
-            <div className="flex flex-row">
+            <div className="flex md:flex-row flex-col">
                 {projectsData.map((data) => (
                     <PortfolioCard key={data.id} picture={data.picture} title={data.title} description={data.description} liveDemoLinks={data.liveDemoLinks} githubLinks={data.githubLinks} tags={data.tags} />
                 ))}

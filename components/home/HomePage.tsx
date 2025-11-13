@@ -12,7 +12,7 @@ export default function HomePage() {
                 <CardProfile />
                 <Introduction />
             </div>
-            <div className="md:px-35 px-10 pt-3">
+            <div className="md:px-35 px-5 pt-3">
                 <div className="pt-3">
                     <TechStack />
                 </div>

@@ -12,11 +12,11 @@ export default function ContactList() {
     return (
         <>
             <div>
-                <p className="font-bold text-5xl capitalize text-[#FF4F04]">
+                <p className="font-bold md:text-5xl text-3xl capitalize text-[#FF4F04] pt-5">
                     contact me here
                 </p>
                 <Separator className="my-4" />
-                <div className="flex flex-row justify-center space-x-3">
+                <div className="flex md:flex-row flex-col space-y-3 justify-center space-x-3">
                     {contactData.map((data) => (
                         <SocialCard
                             key={data.id}
