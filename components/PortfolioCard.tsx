@@ -19,11 +19,12 @@ import Link from "next/link";
 
 // Props
 interface PortfolioCardProps {
-    picture : string,
-    title : string,
-    description : string,
-    liveDemoLinks : string,
-    githubLinks : string,
+    picture: string,
+    title: string,
+    description: string,
+    tags: string[],
+    liveDemoLinks: string,
+    githubLinks: string,
 }
 
 
@@ -31,6 +32,7 @@ export default function PortfolioCard({
     picture,
     title,
     description,
+    tags,
     liveDemoLinks,
     githubLinks,
 }: PortfolioCardProps) {
@@ -57,6 +59,13 @@ export default function PortfolioCard({
                         <CardDescription className="text-sm mb-4 line-clamp-2">
                             {description}
                         </CardDescription>
+
+                        {/* Tech Stack Tags */}
+                        <div className="flex flex-wrap gap-2 mb-4">
+                            {tags.map((tag, index) => (
+                                <span key={index} className="text-xs bg-blue-100 text-blue-700 px-2 py-1 rounded-full">{tag}</span>
+                            ))}
+                        </div>
 
                         {/* Action Buttons */}
                         <div className="flex gap-3">

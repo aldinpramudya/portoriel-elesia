@@ -16,7 +16,7 @@ export default function Portfolio() {
             <Separator className="my-4" />
             <div className="flex flex-row">
                 {projectsData.map((data) => (
-                    <PortfolioCard key={data.id} picture={data.picture} title={data.title} description={data.description} liveDemoLinks={data.liveDemoLinks} githubLinks={data.githubLinks}/>
+                    <PortfolioCard key={data.id} picture={data.picture} title={data.title} description={data.description} liveDemoLinks={data.liveDemoLinks} githubLinks={data.githubLinks} tags={data.tags}/>
                 ))}
             </div>
         </>
