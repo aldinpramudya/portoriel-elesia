@@ -2,6 +2,8 @@
 import { Separator } from "@/components/ui/separator";
 // Components
 import TechStackCard from "@/components/TechStackCard";
+// Constants
+import { techStackData } from "@/constants";
 
 export default function TechStack() {
     return (
@@ -11,9 +13,15 @@ export default function TechStack() {
                     tech stack
                 </p>
                 <Separator className="my-4" />
-                <TechStackCard>
-                    tes
-                </TechStackCard>
+                <div className="space-y-3">
+                    {techStackData.map((data) => (
+                        <TechStackCard key={data.id}>
+                            <p>
+                                {data.text}
+                            </p>
+                        </TechStackCard>
+                    ))}
+                </div>
             </div>
         </>
     )

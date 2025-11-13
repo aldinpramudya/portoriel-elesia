@@ -33,7 +33,7 @@ export default function SocialCard({
             <div className={`h-24 ${bannerColor} relative`}>
                 <div className="absolute inset-0 bg-black/10 group-hover:bg-black/0 transition-colors duration-300" />
             </div>
-
+            
             <CardContent className="pt-0 pb-6 px-6 relative">
                 {/* Profile Picture */}
                 <div className="relative -mt-12 mb-4">
