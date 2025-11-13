@@ -9,7 +9,7 @@ export default function TechStackCard({
 }: TechCardProps) {
     return (
         <>
-            <div className="rounded-md border-2 border-dashed p-4">
+            <div className="rounded-md border-2 border-dashed p-4 ">
                 {children}
             </div>
         </>

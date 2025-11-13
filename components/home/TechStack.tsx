@@ -22,11 +22,11 @@ export default function TechStack() {
     return (
         <>
             <div>
-                <p className="font-bold text-5xl capitalize text-[#FF4F04]">
+                <p className="font-bold md:text-5xl text-3xl capitalize text-[#FF4F04]">
                     tech stack
                 </p>
                 <Separator className="my-4" />
-                <div className="space-y-3 flex flex-col">
+                <div className="space-y-3 flex flex-col md:text-[15px] text-[12px]">
                     <TechStackCard>
                         <p className="font-bold flex flex-row items-center">
                            <FaPhp/>&nbsp;PHP+&nbsp;<SiTypescript/>&nbsp;Typescript+&nbsp;<IoLogoJavascript/>&nbsp;Javascript 

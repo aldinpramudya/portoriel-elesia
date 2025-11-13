@@ -18,14 +18,14 @@ export default function Experience() {
     return (
         <>
             <div>
-                <p className="font-bold text-5xl capitalize text-[#FF4F04]">
+                <p className="font-bold md:text-5xl text-3xl capitalize text-[#FF4F04]">
                     experiences & works related
                 </p>
                 <Separator className="my-4" />
                 {/* Contents */}
                 <div className="space-y-3 *:">
                     {experienceData.map((data) => (
-                        <ActivityCard key={data.id} title={data.title} time={data.time} description={data.description}>
+                        <ActivityCard key={data.id} title={data.title} time={data.time} description={data.description} place={data.place}>
                             <ul className="list-disc list-inside pt-3">
                                 {data.children.map((item, index) => (
                                     <li key={index} className="leading-relaxed">

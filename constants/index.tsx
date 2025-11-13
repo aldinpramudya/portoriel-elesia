@@ -2,6 +2,7 @@ export const experienceData = [
     {
         id: 1,
         title: "Self Employed On RIEL.studio",
+        place: "Malang, Indonesia",
         time: "May 2024 - Present",
         description: "As a freelancer, I focus on helping clients solve problems and overcome challenges by building tailored solutions that meet their needs. Through clear communication, understanding the client’s goals, discussing ideas, and collaborative approach. I ensure that the solutions I deliver are practical, effective, and designed to bring real value to their business.",
         children: [
@@ -12,6 +13,7 @@ export const experienceData = [
     {
         id: 2,
         title: "Web Developer Internship",
+        place: "PT. Surabaya Autocomp Indonesia, Ngoro, Mojokerto",
         time: "July 2024 - December 2024",
         description: "PT. Surabaya Autocomp Indonesia is a manufacturing company that operates as part of YAZAKI Corporation, a leading global Japanese manufacturer specializing in automotive components. Focuses on producing high-quality automotive wiring harnesses and related parts that support major automotive brands worldwide",
         children: [
