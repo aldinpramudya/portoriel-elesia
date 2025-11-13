@@ -1,3 +1,6 @@
+import { ReactNode } from "react";
+
+// Shadcn Components
 import { Button } from "@/components/ui/button"
 import {
     Card,
@@ -5,14 +8,32 @@ import {
     CardDescription,
     CardHeader,
     CardTitle,
-} from "@/components/ui/card"
+} from "@/components/ui/card";
 
+// Icons
 import { RxOpenInNewWindow } from "react-icons/rx";
 import { FiGithub } from "react-icons/fi";
+
+// Links
 import Link from "next/link";
 
+// Props
+interface PortfolioCardProps {
+    picture : string,
+    title : string,
+    description : string,
+    liveDemoLinks : string,
+    githubLinks : string,
+}
 
-export default function PortfolioCard() {
+
+export default function PortfolioCard({
+    picture,
+    title,
+    description,
+    liveDemoLinks,
+    githubLinks,
+}: PortfolioCardProps) {
     return (
         <div className="w-full p-6 flex justify-center">
             <Card className="w-full max-w-md group hover:shadow-xl transition-all duration-300 hover:-translate-y-2 overflow-hidden">
@@ -20,7 +41,7 @@ export default function PortfolioCard() {
                     {/* Image Container with Overlay */}
                     <div className="relative aspect-video overflow-hidden bg-gray-100">
                         <img
-                            src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=800&q=80"
+                            src={picture}
                             alt="Project Screenshot"
                             className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                         />
@@ -31,23 +52,15 @@ export default function PortfolioCard() {
                     {/* Content Section */}
                     <div className="p-6">
                         <CardTitle className="text-xl mb-2 group-hover:text-blue-600 transition-colors duration-300">
-                            E-Commerce Platform
+                            {title}
                         </CardTitle>
                         <CardDescription className="text-sm mb-4 line-clamp-2">
-                            A full-stack e-commerce solution with real-time inventory management,
-                            secure payments, and responsive design for seamless shopping experience.
+                            {description}
                         </CardDescription>
-
-                        {/* Tech Stack Tags */}
-                        <div className="flex flex-wrap gap-2 mb-4">
-                            <span className="text-xs bg-blue-100 text-blue-700 px-2 py-1 rounded-full">React</span>
-                            <span className="text-xs bg-green-100 text-green-700 px-2 py-1 rounded-full">Node.js</span>
-                            <span className="text-xs bg-purple-100 text-purple-700 px-2 py-1 rounded-full">MongoDB</span>
-                        </div>
 
                         {/* Action Buttons */}
                         <div className="flex gap-3">
-                            <Link href="" target="_blank">
+                            <Link href={`${liveDemoLinks}`} target="_blank">
                                 <Button
                                     className="flex-1 gap-2"
                                 >
@@ -55,7 +68,7 @@ export default function PortfolioCard() {
                                     Live Demo
                                 </Button>
                             </Link>
-                            <Link href="" target="_blank">
+                            <Link href={`${githubLinks}`} target="_blank">
                                 <Button
                                     variant="outline"
                                     className="flex-1 gap-2 hover:bg-gray-900 hover:text-white transition-colors"
