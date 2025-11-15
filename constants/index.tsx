@@ -22,7 +22,20 @@ export const experienceData = [
             "Join on kaizen (improvement) program, developed a digital prototype that enabling to first-hand monitoring machine, reducing the need for manual on-site check",
         ]
     },
+    {
+        id: 3,
+        title: "MSIB Studi Independen Full Stack Web Developer",
+        place: "PT. Arkatama Multi Solusindo",
+        time: "February 2024 - June 2024",
+        description: "PT. Arkatama Multi Solusindo is an IT consulting firm specializing in delivering wide range of technology solution including application development, hardware infrastructure and automation, PT. Arkatama Multi Solusindo also dive to media learning to give tech-learner or enthusiast an edge on newest tech through AMD Academy",
+        children: [
+            "Work on a team as a full-stack developer on a application used for managing information related to cooperation agreements and related documents in the case study of a hospital.",
+            "Project-based learning with mentor and trainer from PT. Arkatama Multi Solusindo",
+            "Widen my network with new friends, mentor and trainer"
+        ]
+    },
 ];
+
 
 export const projectsData = [
     {

@@ -11,7 +11,7 @@ import { contactData } from "@/constants"
 export default function ContactList() {
     return (
         <>
-            <div>
+            <div className="px-5">
                 <p className="font-bold md:text-5xl text-3xl capitalize text-[#FF4F04] pt-5">
                     contact me here
                 </p>

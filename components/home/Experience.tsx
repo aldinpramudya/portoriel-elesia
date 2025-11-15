@@ -23,8 +23,8 @@ export default function Experience() {
                 </p>
                 <Separator className="my-4" />
                 {/* Contents */}
-                <div className="space-y-3 *:">
-                    {experienceData.map((data) => (
+                <div className="space-y-3">
+                    {experienceData.slice(0, 2).map((data) => (
                         <ActivityCard key={data.id} title={data.title} time={data.time} description={data.description} place={data.place}>
                             <ul className="list-disc list-inside pt-3">
                                 {data.children.map((item, index) => (
@@ -37,7 +37,7 @@ export default function Experience() {
                     ))}
                 </div>
                 <div className="w-full flex justify-center py-8">
-                    <Link href="/works">
+                    <Link href="/works#experience">
                         <Button
                             size="lg"
                             className="bg-(--main-color) text-lg px-8 py-6 h-auto gap-3 group hover:gap-4 transition-all duration-300 shadow-lg hover:bg-white hover:text-(--main-color)">

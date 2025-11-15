@@ -30,7 +30,7 @@ export default function RielStudioCard() {
                                     </h2>
                                     <p className="text-white/90 text-sm md:text-base max-w-xl text-justify">
                                         Explore <span className="font-bold">RIEL.studio,</span> <br />
-                                        my very own projects on freelancing andmy vision and dream where i&apos;ll help you kickstart your idea to digital journey with purpose and style.
+                                        my very own projects on freelancing and my vision and dream where i&apos;ll help you kickstart your idea to digital journey with purpose and style.
                                     </p>
                                 </div>
                             </div>

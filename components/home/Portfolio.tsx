@@ -29,7 +29,7 @@ export default function Portfolio() {
             </div>
             {/* Button */}
             <div className="w-full flex justify-center py-8">
-                <Link href="/works">
+                <Link href="/works#projects">
                     <Button
                         size="lg"
                         className="bg-(--main-color) text-lg px-8 py-6 h-auto gap-3 group hover:gap-4 transition-all duration-300 shadow-lg hover:bg-white hover:text-(--main-color)">
