@@ -19,9 +19,17 @@ export default function WorkPage() {
                 <div className="pt-4">
                     <Projects />
                 </div>
-                <div id="projects" className="flex md:flex-row flex-col">
+                <div id="projects" className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                     {projectsData.map((data) => (
-                        <PortfolioCard key={data.id} picture={data.picture} title={data.title} description={data.description} liveDemoLinks={data.liveDemoLinks} githubLinks={data.githubLinks} tags={data.tags} />
+                        <PortfolioCard
+                            key={data.id}
+                            picture={data.picture}
+                            title={data.title}
+                            description={data.description}
+                            liveDemoLinks={data.liveDemoLinks}
+                            githubLinks={data.githubLinks}
+                            tags={data.tags}
+                        />
                     ))}
                 </div>
                 <div id="experience">

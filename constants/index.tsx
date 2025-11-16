@@ -77,6 +77,19 @@ export const projectsData = [
         ],
         liveDemoLinks: "https://sigaplapor.com/",
         githubLinks: "https://github.com/aldinpramudya/sigap-project",
+    },
+    {
+        id: 4,
+        picture: "/project/mojito.jpg",
+        title: "Mojito Landing Page",
+        description: "Landing Page for a cocktail bar with parallax animation and interactive user interface",
+        tags: [
+            "React",
+            "Javascript",
+            "GSAP",
+        ],
+        liveDemoLinks: "https://mojito-landing-page-phi.vercel.app/",
+        githubLinks: "https://github.com/aldinpramudya/mojito-landing-page",
     }
 ]
 

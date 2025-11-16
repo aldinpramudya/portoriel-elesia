@@ -39,8 +39,8 @@ export default function PortfolioCard({
 
      return (
         <div className="w-full p-6 flex justify-center">
-            <Card className="w-full max-w-md group hover:shadow-xl transition-all duration-300 hover:-translate-y-2 overflow-hidden">
-                <CardContent className="p-0">
+            <Card className="w-full max-w-md group hover:shadow-xl transition-all duration-300 hover:-translate-y-2 overflow-hidden flex flex-col h-full">
+                <CardContent className="p-0 flex flex-col h-full">
                     {/* Image Container with Overlay */}
                     <div className="relative aspect-video overflow-hidden bg-gray-100">
                         <img
@@ -52,8 +52,8 @@ export default function PortfolioCard({
                         <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                     </div>
 
-                    {/* Content Section */}
-                    <div className="p-6">
+                    {/* Content Section - flex-grow pushes buttons to bottom */}
+                    <div className="p-6 flex flex-col flex-grow">
                         <CardTitle className="text-xl mb-2 group-hover:text-[#FF4F04] transition-colors duration-300">
                             {title}
                         </CardTitle>
@@ -73,8 +73,11 @@ export default function PortfolioCard({
                             ))}
                         </div>
 
-                        {/* Action Buttons */}
-                        <div className="flex gap-3">
+                        {/* Spacer to push buttons to bottom */}
+                        <div className="flex-grow"></div>
+
+                        {/* Action Buttons - Always at bottom */}
+                        <div className="flex gap-3 mt-auto">
                             {/* Live Demo Button - Conditional */}
                             {hasLiveDemo ? (
                                 <Link href={liveDemoLinks} target="_blank" className="flex-1">
