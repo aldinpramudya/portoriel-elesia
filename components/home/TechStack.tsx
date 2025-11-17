@@ -16,6 +16,7 @@ import { SiPostgresql } from "react-icons/si";
 import { SiNextdotjs } from "react-icons/si";
 import { FaPhp } from "react-icons/fa";
 import { FaReact } from "react-icons/fa";
+import { TbApi } from "react-icons/tb";
 
 
 export default function TechStack() {
@@ -44,7 +45,7 @@ export default function TechStack() {
                     </TechStackCard>
                     <TechStackCard>
                         <p className="font-bold flex flex-row items-center">
-                            <GrMysql/>&nbsp;MySQL +&nbsp;<SiMongodb/>&nbsp;MongoDB + &nbsp;<SiPostgresql/>&nbsp;PostgreSQL
+                            <GrMysql/>&nbsp;MySQL +&nbsp;<SiMongodb/>&nbsp;MongoDB + &nbsp;<SiPostgresql/>&nbsp;PostgreSQL + &nbsp;<TbApi/>&nbsp;REST APIs
                         </p>
                     </TechStackCard>
                 </div>
